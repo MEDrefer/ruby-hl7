@@ -25,6 +25,11 @@ describe HL7::Message::Segment::PID do
 
     end
 
+    it 'sets the name correctly' do
+      pid = HL7::Message::Segment::PID.new @base
+      pid.patient_name.should == 'LastName^FirstName^MiddleInitial^SR^NickName'
+    end
+
     it 'supports death fields' do
       pid = HL7::Message::Segment::PID.new @base
       pid.death_date.should == '201011110924-0700'
