@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ruby-hl7}
+  s.name = "ruby-hl7"
   s.version = "1.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark Guzman"]
-  s.date = %q{2011-01-25}
+  s.date = %q{2014-01-23}
   s.description = %q{A simple library to parse and generate HL7 2.x messages}
   s.email = %q{ruby-hl7@googlegroups.com}
   s.extra_rdoc_files = [
@@ -17,9 +17,19 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    "lib/ruby-hl7.rb",
+    "lib/core_ext/date_time.rb",
+     "lib/core_ext/string.rb",
+     "lib/message.rb",
+     "lib/message_parser.rb",
+     "lib/ruby-hl7.rb",
+     "lib/segment.rb",
+     "lib/segment_default.rb",
+     "lib/segment_fields.rb",
+     "lib/segment_generator.rb",
+     "lib/segment_list_storage.rb",
      "lib/segments/err.rb",
      "lib/segments/evn.rb",
+     "lib/segments/in1.rb",
      "lib/segments/msa.rb",
      "lib/segments/msh.rb",
      "lib/segments/nk1.rb",
@@ -29,13 +39,14 @@ Gem::Specification.new do |s|
      "lib/segments/orc.rb",
      "lib/segments/oru.rb",
      "lib/segments/pid.rb",
+     "lib/segments/prd.rb",
      "lib/segments/pv1.rb",
      "lib/segments/pv2.rb",
      "lib/segments/qrd.rb",
      "lib/segments/qrf.rb",
      "lib/segments/sft.rb",
      "lib/segments/spm.rb",
-     "lib/string.rb",
+     "lib/segments/zcf.rb",
      "lib/test/hl7_messages.rb",
      "test_data/adt_a01.hl7",
      "test_data/cerner/cerner_bordetella.hl7",
