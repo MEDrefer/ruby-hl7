@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
      "lib/segments/pv2.rb",
      "lib/segments/qrd.rb",
      "lib/segments/qrf.rb",
+     "lib/segments/rf1.rb",
      "lib/segments/sft.rb",
      "lib/segments/spm.rb",
      "lib/segments/zcf.rb",
